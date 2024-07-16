@@ -15,9 +15,9 @@
 ----- 02 COLORS -----
 
   - Primary: #e67e22
-  - Grays: #555
+  - Grays: #555 #333
   - Accent:
-  - Tints:
+  - Tints: #fdf2e9
   - Shades:
 
 
@@ -35,9 +35,92 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%; /* set rem to 10px */
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 9.6rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  text-decoration: none;
+
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+
+  /* adding animation for buttons */
+  transition: background-color 0.3s;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: #cf711f;
+}
+
+/* helper class */
+.margin-right {
+  margin-right: 1.6rem !important;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+  background-color: white;
+  color: #555;
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  background-color: #fdf2e9;
+
+  /* add border inside */
+  box-shadow: inset 0 0 3px #fff;
+}
+
+.hero-img {
+  width: 100%;
 }
