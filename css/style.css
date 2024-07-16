@@ -18,7 +18,7 @@
   - Grays: #555 #333
   - Accent:
   - Tints: #fdf2e9
-  - Shades:
+  - Shades: #cf711f
 
 
 ----- 07 WHITE SPACE -----
@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -83,6 +83,7 @@ body {
 
   font-size: 2rem;
   text-decoration: none;
+  font-weight: 600;
 
   padding: 1.6rem 3.2rem;
   border-radius: 1rem;
@@ -119,6 +120,36 @@ body {
 
   /* add border inside */
   box-shadow: inset 0 0 3px #fff;
+}
+
+.delivered-meals {
+  margin-top: 8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-left: -1.6rem;
+  border-radius: 50%;
+  border: 0.3rem solid #fdf2e9;
+}
+
+.delivered-text {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
 
 .hero-img {
