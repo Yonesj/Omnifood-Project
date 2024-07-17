@@ -25,7 +25,7 @@
 
 
 ----- 06 SHADOWS -----
-  - 9px
+  - 9px / 12px
 
 ----- 07 WHITE SPACE -----
 
@@ -140,4 +140,8 @@ body {
 
 .grid--4cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+strong {
+  font-weight: 500;
 }
