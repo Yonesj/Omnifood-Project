@@ -228,6 +228,12 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 
 .meal-img {
@@ -293,4 +299,30 @@
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
+}
+
+.list {
+  list-style: none;
+  /* padding: 0 1.6rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.list ion-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
