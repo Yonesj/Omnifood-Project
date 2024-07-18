@@ -581,3 +581,22 @@
   background-size: cover;
   background-position: center;
 }
+
+/**************************************/
+/*********** FOOTER SECTION ***********/
+/**************************************/
+.grid--5cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer {
+}
+
+.logo-col {
+}
+
+.address-col {
+}
+
+.nav-col {
+}
