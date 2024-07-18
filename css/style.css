@@ -501,7 +501,7 @@
 /***** CALL TO ACTION SECTION *********/
 /**************************************/
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -586,17 +586,75 @@
 /*********** FOOTER SECTION ***********/
 /**************************************/
 .grid--5cols {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .footer {
+  padding: 12.8rem;
+  border-top: 1px solid #eee;
 }
 
 .logo-col {
+  display: flex;
+  flex-direction: column;
 }
 
-.address-col {
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
 }
 
-.nav-col {
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: auto;
+}
+
+.footer ion-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #777;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #777;
+}
+
+.contacts p:first-child {
+  margin-bottom: 2.4rem;
 }
