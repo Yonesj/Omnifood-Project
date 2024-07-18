@@ -109,4 +109,55 @@ instead 1rem = 1em = 16px */
   .btn--form {
     margin-top: 1.6rem;
   }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    /* hiding mobile nav: */
+    /* we did nt use display: none; because it allows no animation */
+
+    opacity: 0; /* hide it visually */
+    pointer-events: none; /* make it unreachable to mouse and keybor */
+    visibility: hidden; /* hide it from screen readers */
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3.2rem;
+  }
 }
