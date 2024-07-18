@@ -15,3 +15,39 @@ instead 1rem = 1em = 16px */
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* below 1200px (landscape Tables) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%; /* 9/16 */
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
