@@ -126,6 +126,10 @@
   border: 0.3rem solid #fdf2e9;
 }
 
+.delivered-imgs img:first-child {
+  margin-left: 0;
+}
+
 .delivered-text {
   font-weight: 600;
   font-size: 1.8rem;
