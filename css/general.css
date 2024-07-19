@@ -1,0 +1,198 @@
+/* 
+
+----- 01 TYPOGRAPHY SYSTEM -----
+
+  - Font sizes (px):
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - Font weights:
+    400 (default)/ 500 / 600 / 700
+
+  - Line height:
+    1 (default) / 1.6
+
+  - Letter spacing:
+    -0.5px / 0.75px
+
+
+----- 02 COLORS -----
+
+  - Primary: #e67e22
+  - Grays: #555 #666 #333
+  - Accent:
+  - Tints: #fdf2e9  #fae5d3
+  - Shades: #cf711f #45260a
+
+
+----- 06 SHADOWS -----
+  - 9px / 12px
+
+----- 07 WHITE SPACE -----
+
+  - Spacing system (px):
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
+}
+
+html {
+  font-size: 62.5%; /* set rem to 10px */
+  overflow-x: hidden; /* only works if nothing absolutely positioned in relation to body */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden; /* only works if nothing absolutely positioned in relation to body */
+}
+
+/**************************************/
+/******** Reusable components *********/
+/**************************************/
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+
+  /* adding animation for buttons */
+  transition: background-color 0.3s;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: #cf711f;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+  background-color: white;
+  color: #555;
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  background-color: #fdf2e9;
+
+  /* add border inside */
+  box-shadow: inset 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.container {
+  max-width: 120rem; /* 1200px and 1140 are standard values */
+  margin: 0 auto;
+  padding: 0 3.2rem; /* 32px will subrtacted from both sides so cantainer width will be almost 1140 */
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* helper class */
+.margin-right {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}
