@@ -10,6 +10,15 @@ navBtn.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+const navLinks = document.querySelectorAll(".main-nav-link");
+
+navLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    if (headerEl.classList.contains("nav-open"))
+      headerEl.classList.remove("nav-open");
+  });
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

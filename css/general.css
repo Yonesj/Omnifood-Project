@@ -39,7 +39,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: clip;
 }
 
 *:focus {
@@ -50,6 +49,8 @@
 
 html {
   font-size: 62.5%; /* set rem to 10px */
+  overflow-x: hidden; /* only works if nothing absolutely positioned in relation to body */
+  scroll-behavior: smooth;
 }
 
 body {
