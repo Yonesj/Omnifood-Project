@@ -205,3 +205,89 @@ instead 1rem = 1em = 16px */
     grid-column: span 2;
   }
 }
+
+/* below 544px (phones) */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2cols,
+  .grid--3cols,
+  .grid--4cols {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-starter {
+    justify-self: auto;
+  }
+
+  .section-hero {
+    padding: 1.6rem 0 4.8rem 0;
+  }
+
+  .hero {
+    display: block;
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .section-how,
+  .section-meals {
+    padding: 6.4rem 0;
+  }
+
+  .steps div:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .steps div:last-child {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonial-container {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .footer {
+    padding: 4.8rem 3.2rem;
+  }
+}
